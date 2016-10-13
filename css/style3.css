@@ -1,0 +1,1157 @@
+.results {
+  padding-top: 60px; }
+
+.devision {
+  margin-top: 20px; }
+
+.liders {
+  padding-top: 30px;
+  padding-bottom: 50px; }
+
+.span-table-2 {
+  padding-left: 2px !important; }
+
+/*select*/
+.az-select {
+  border: 2px solid #cbd1d6;
+  position: relative;
+  cursor: pointer; }
+  .az-select select {
+    height: 36px;
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0 15px;
+    letter-spacing: 0.02em;
+    font-family: "OpenSans-Semibold";
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
+  .az-select select::-ms-expand {
+    display: none; }
+  .az-select .az-options {
+    display: none;
+    top: calc(100% + 2px);
+    left: -2px;
+    width: calc(100% + 4px);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+    z-index: 6; }
+    .az-select .az-options div[data-val] {
+      font-size: 14px;
+      font-family: "OpenSans-Semibold";
+      color: #fff;
+      padding: 0 15px;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+      cursor: pointer; }
+    .az-select .az-options div[data-val]:hover {
+      background: rgba(255, 255, 255, 0.1); }
+
+.az-select:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 15px;
+  width: 13px;
+  height: 8px;
+  background: url(../img/select-arrow.png) no-repeat top left;
+  z-index: 1; }
+
+.az-select-focus:before {
+  background: url(../img/select-arrow-focus.png) no-repeat top left; }
+
+.az-select_style {
+  position: relative;
+  z-index: 2; }
+
+/*select*/
+h2 {
+  font-size: 28px;
+  font-family: "OpenSans-Semibold";
+  text-transform: uppercase;
+  color: #e09b1b;
+  letter-spacing: 0.02em;
+  margin-bottom: 30px; }
+
+/*table*/
+.span-table {
+  font-family: "OpenSans-Regular";
+  font-size: 20px;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  display: block; }
+
+.span-table2 {
+  font-family: "OpenSans-Regular";
+  font-size: 20px;
+  color: #97a3ad;
+  margin-bottom: 10px;
+  margin-top: 12px;
+  display: block; }
+
+.az-table {
+  width: 100%; }
+  .az-table td {
+    padding: 10px 10px; }
+  .az-table th {
+    padding: 10px 10px;
+    background: #e4e9eb; }
+  .az-table tr:nth-child(2n+1) {
+    background: #eef3f5; }
+
+.ticon1 {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../img/az-timg1.png) no-repeat top center;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0 5px;
+  position: relative; }
+  .ticon1 .az-tpopup {
+    display: none; }
+
+.ticon1:hover {
+  background: url(../img/az-timg1-hover.png) no-repeat top center; }
+  .ticon1:hover .az-tpopup {
+    position: absolute;
+    display: block;
+    bottom: calc(100% + 10px);
+    right: -12px;
+    padding: 20px;
+    min-width: 218px;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: left; }
+    .ticon1:hover .az-tpopup .az-title {
+      display: block;
+      font-family: "OpenSans-Semibold";
+      font-size: 16px;
+      color: #fff;
+      letter-spacing: 0.02em;
+      margin-bottom: 25px; }
+    .ticon1:hover .az-tpopup .az-text {
+      display: block;
+      font-family: "OpenSans-Italic";
+      font-size: 14px;
+      color: #fff;
+      letter-spacing: 0.02em; }
+
+.ticon1:hover:before {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: calc(100% + 3px);
+  right: 50%;
+  transform: translate(50%, 0);
+  width: 0px;
+  height: 0px;
+  border-top: 7px solid rgba(0, 0, 0, 0.8);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent; }
+
+.ticon2 {
+  display: inline-block;
+  width: 18px;
+  height: 14px;
+  background: url(../img/az-timg2.png) no-repeat top left;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0 5px; }
+
+.ticon3 {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../img/az-timg3.png) no-repeat top left;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0 5px; }
+
+.ticon4 {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../img/az-timg4.png) no-repeat top center;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0 5px; }
+
+.az-table_style td:first-child {
+  text-align: center;
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  color: #97a3ad;
+  letter-spacing: 0.02em; }
+.az-table_style td:nth-child(2) {
+  text-align: left;
+  font-family: "OpenSans-Semibold";
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 0.02em; }
+  .az-table_style td:nth-child(2) a {
+    color: #000; }
+  .az-table_style td:nth-child(2) a:hover {
+    text-decoration: underline; }
+.az-table_style td:nth-child(3) {
+  text-align: left;
+  font-family: "OpenSans-Bold";
+  font-size: 14px;
+  color: #97a3ad;
+  letter-spacing: 0.02em; }
+  .az-table_style td:nth-child(3) a {
+    color: #f37527; }
+  .az-table_style td:nth-child(3) a:hover {
+    text-decoration: underline; }
+.az-table_style td:last-child {
+  text-align: center; }
+  .az-table_style td:last-child a {
+    font-family: "OpenSans-Semibold";
+    font-size: 14px;
+    color: #f32727;
+    letter-spacing: 0.02em; }
+  .az-table_style td:last-child a:hover {
+    text-decoration: underline; }
+
+.az-table_style2 td:first-child {
+  text-align: center;
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  color: #97a3ad;
+  letter-spacing: 0.02em; }
+.az-table_style2 td:nth-child(2) {
+  text-align: left;
+  font-family: "OpenSans-Semibold";
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 0.02em; }
+  .az-table_style2 td:nth-child(2) a {
+    color: #000; }
+  .az-table_style2 td:nth-child(2) a:hover {
+    text-decoration: underline; }
+.az-table_style2 td:nth-child(3), .az-table_style2 td:last-child {
+  text-align: center;
+  font-family: "OpenSans-Bold";
+  font-size: 14px;
+  color: #97a3ad;
+  letter-spacing: 0.02em; }
+  .az-table_style2 td:nth-child(3) a, .az-table_style2 td:last-child a {
+    color: #f37527; }
+  .az-table_style2 td:nth-child(3) a:hover, .az-table_style2 td:last-child a:hover {
+    text-decoration: underline; }
+.az-table_style2 th {
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  color: #97a3ad;
+  letter-spacing: 0.02em; }
+.az-table_style2 th:first-child {
+  text-align: left; }
+.az-table_style2 th {
+  text-align: center; }
+
+.az-table_style3 td:first-child {
+  text-align: left;
+  font-family: "OpenSans-Semibold";
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 0.02em; }
+  .az-table_style3 td:first-child a {
+    color: #000; }
+  .az-table_style3 td:first-child a:hover {
+    text-decoration: underline; }
+.az-table_style3 td:nth-child(2) {
+  text-align: right;
+  font-family: "OpenSans-Bold";
+  font-size: 14px;
+  color: #97a3ad;
+  letter-spacing: 0.02em; }
+  .az-table_style3 td:nth-child(2) a {
+    color: #f37527; }
+  .az-table_style3 td:nth-child(2) a:hover {
+    text-decoration: underline; }
+
+/*table*/
+/**********tabs*********/
+.tabs {
+  position: relative;
+  margin: 0 auto;
+  width: 100%; }
+
+.tabs__margin {
+  margin-top: 15px; }
+
+.tabs input[type="radio"] {
+  display: none; }
+
+#tab_1:checked ~ #tab_l1,
+#tab_2:checked ~ #tab_l2,
+#tab_3:checked ~ #tab_l3,
+#tab_4:checked ~ #tab_l4,
+#tab_5:checked ~ #tab_l5,
+#tab_6:checked ~ #tab_l6 {
+  color: #0099cc;
+  top: 0;
+  z-index: 3;
+  position: relative; }
+
+#tab_1:checked ~ #tab_l1:before,
+#tab_2:checked ~ #tab_l2:before,
+#tab_3:checked ~ #tab_l3:before,
+#tab_4:checked ~ #tab_l4:before,
+#tab_5:checked ~ #tab_l5:before,
+#tab_6:checked ~ #tab_l6:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  width: 100%;
+  background: #0099cc;
+  height: 2px; }
+
+.tabs label {
+  font-size: 20px;
+  font-family: "OpenSans-Regular";
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-right: 20px;
+  cursor: pointer; }
+
+.tabs_cont > div {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  opacity: 0;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  height: 0px; }
+
+#tab_1:checked ~ .tabs_cont #tab_c1,
+#tab_2:checked ~ .tabs_cont #tab_c2,
+#tab_3:checked ~ .tabs_cont #tab_c3,
+#tab_4:checked ~ .tabs_cont #tab_c4,
+#tab_5:checked ~ .tabs_cont #tab_c5,
+#tab_6:checked ~ .tabs_cont #tab_c6 {
+  position: static;
+  left: 0;
+  opacity: 1;
+  height: unset; }
+
+.tabs_cont {
+  padding-top: 25px; }
+
+.tab-span {
+  font-family: "OpenSans-Regular";
+  font-size: 16px;
+  color: #000;
+  letter-spacing: 0.02em; }
+
+.tabs_cont_style2 {
+  margin-top: 40px; }
+
+.tabs_cont_style3 {
+  margin-top: -9px; }
+
+/**********tabs*********/
+.az-right {
+  float: right; }
+
+.az-left {
+  float: left; }
+
+.az-select_style {
+  width: 100%; }
+
+.az-tlink {
+  display: inline;
+  font-family: "OpenSans-Regular";
+  font-size: 13px;
+  color: #0099cc;
+  letter-spacing: 0.02em; }
+
+.az-tlink:hover {
+  text-decoration: underline; }
+
+.az-center {
+  text-align: center; }
+
+.az-left {
+  text-align: left; }
+
+.az-col2 {
+  width: 100%;
+  float: left; }
+
+.az-col3 {
+  width: 100%;
+  float: left; }
+
+.az-col4 {
+  width: 497px;
+  float: left; }
+
+.az-col5 {
+  width: 225px;
+  float: left; }
+
+.az-col6 {
+  width: 23.5%;
+  float: left; }
+
+.az-margin26 {
+  margin-right: 2%; }
+
+.az-margin06 {
+  margin-right: 0%; }
+
+/*lenta*/
+.az-back {
+  background: #f6f9fa; }
+
+.az-lenta-link {
+  font-family: "OpenSans-Regular";
+  font-size: 16px;
+  color: #000;
+  letter-spacing: 0.02em;
+  line-height: 22px;
+  display: block; }
+
+.az-lenta-link:hover {
+  text-decoration: underline; }
+
+.az-lenta-date {
+  font-family: "OpenSans-Regular";
+  font-size: 12px;
+  color: #97a3ad;
+  letter-spacing: 0.02em;
+  line-height: 23px;
+  display: block; }
+
+/*lenta*/
+/*leader*/
+.az-lider-item {
+  font-size: 0px; }
+  .az-lider-item .az-boximg {
+    width: 40%;
+    max-width: 200px;
+    margin-right: 5%;
+    float: left; }
+    .az-lider-item .az-boximg img {
+      width: 100%;
+      height: auto; }
+  .az-lider-item .az-desc {
+    width: 55%;
+    float: left; }
+    .az-lider-item .az-desc .span-desc1 {
+      font-family: "OpenSans-Semibold";
+      font-size: 18px;
+      color: #050708;
+      letter-spacing: 0.02em;
+      line-height: 24px;
+      display: block;
+      white-space: nowrap; }
+    .az-lider-item .az-desc .span-desc1:hover {
+      text-decoration: underline; }
+    .az-lider-item .az-desc .span-desc2 {
+      font-family: "OpenSans-Regular";
+      font-size: 14px;
+      color: #050708;
+      letter-spacing: 0.02em;
+      line-height: 23px;
+      display: block; }
+      .az-lider-item .az-desc .span-desc2 a {
+        color: #050708; }
+      .az-lider-item .az-desc .span-desc2 a:hover {
+        text-decoration: underline; }
+    .az-lider-item .az-desc .span-desc3 {
+      font-family: "OpenSans-Regular";
+      font-size: 14px;
+      color: #97a3ad;
+      letter-spacing: 0.02em;
+      line-height: 23px;
+      display: block; }
+    .az-lider-item .az-desc .span-desc4 {
+      font-family: "OpenSans-Bold";
+      font-size: 16px;
+      color: #f37527;
+      letter-spacing: 0.02em;
+      line-height: 20px;
+      display: block; }
+
+/*leader*/
+/*season*/
+.az-quest {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  background: #dff2f8 url(../img/az-quest.gif) no-repeat center center;
+  cursor: pointer;
+  vertical-align: -7%;
+  margin: 0 5px;
+  position: relative; }
+  .az-quest .az-tpopup {
+    display: none; }
+
+.az-quest:hover .az-tpopup {
+  position: absolute;
+  display: block;
+  bottom: calc(100% + 10px);
+  left: -12px;
+  padding: 20px;
+  min-width: 218px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  z-index: 9; }
+  .az-quest:hover .az-tpopup .az-title {
+    display: block;
+    font-family: "OpenSans-Semibold";
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 0.02em;
+    margin-bottom: 25px; }
+  .az-quest:hover .az-tpopup .az-text {
+    display: block;
+    font-family: "OpenSans-Italic";
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.02em;
+    text-transform: none; }
+
+.az-quest:hover:before {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: calc(100% + 3px);
+  right: 50%;
+  transform: translate(50%, 0);
+  width: 0px;
+  height: 0px;
+  border-top: 7px solid rgba(0, 0, 0, 0.8);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent; }
+
+.season-content {
+  width: 1219px; }
+
+.tabs__margin3 {
+  font-size: 0px;
+  margin-top: 15px; }
+
+.tabs__margin3 label {
+  text-align: center;
+  font-size: 20px;
+  font-family: "OpenSans-Regular";
+  color: #000;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  margin-right: 0px;
+  cursor: pointer;
+  width: 50%;
+  display: inline-block;
+  position: relative; }
+
+.tabs__margin3 label:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  width: 100%;
+  background: #cbd1d6;
+  height: 2px; }
+
+/*season*/
+/*season-item*/
+.season-item1 {
+  width: 100%;
+  height: 26px;
+  position: relative; }
+  .season-item1 .season-item11, .season-item1 .season-item13 {
+    width: 26px;
+    height: 26px; }
+  .season-item1 .season-item11 {
+    background: #e7ecee;
+    font-family: "OpenSans-Regular";
+    font-size: 10px;
+    color: #97a3ad;
+    line-height: 26px;
+    text-align: center;
+    float: left; }
+  .season-item1 .season-item12 {
+    width: calc(100% - 52px);
+    height: 26px;
+    float: left;
+    background: #eef3f5;
+    padding-left: 4px;
+    padding-top: 5px; }
+    .season-item1 .season-item12 .az-span1 {
+      color: #050708;
+      font-family: "OpenSans-Semibold";
+      font-size: 9px;
+      display: block;
+      letter-spacing: 0.02em; }
+    .season-item1 .season-item12 .az-span1:hover {
+      text-decoration: underline; }
+    .season-item1 .season-item12 .az-span2 {
+      color: #666666;
+      font-family: "OpenSans-Semibold";
+      font-size: 7px;
+      display: block;
+      letter-spacing: 0.02em;
+      line-height: 5px; }
+  .season-item1 .season-item13 {
+    background: #d0e0ef;
+    line-height: 26px;
+    text-align: center;
+    float: left; }
+    .season-item1 .season-item13 a {
+      font-family: "OpenSans-Semibold";
+      font-size: 10px;
+      color: #999999; }
+    .season-item1 .season-item13 a:hover {
+      text-decoration: underline; }
+
+.season-item2 {
+  width: 100%;
+  height: 26px;
+  position: relative; }
+  .season-item2 .season-item11, .season-item2 .season-item13 {
+    width: 26px;
+    height: 26px; }
+  .season-item2 .season-item11 {
+    background: #f1f3f4;
+    font-family: "OpenSans-Regular";
+    font-size: 10px;
+    color: #97a3ad;
+    line-height: 26px;
+    text-align: center;
+    float: left; }
+  .season-item2 .season-item12 {
+    width: calc(100% - 52px);
+    height: 26px;
+    float: left;
+    background: #f9fafb;
+    padding-left: 4px;
+    padding-top: 5px; }
+    .season-item2 .season-item12 .az-span1 {
+      color: #050708;
+      font-family: "OpenSans-Semibold";
+      font-size: 9px;
+      display: block;
+      letter-spacing: 0.02em; }
+    .season-item2 .season-item12 .az-span1:hover {
+      text-decoration: underline; }
+    .season-item2 .season-item12 .az-span2 {
+      color: #666666;
+      font-family: "OpenSans-Semibold";
+      font-size: 7px;
+      display: block;
+      letter-spacing: 0.02em;
+      line-height: 5px; }
+  .season-item2 .season-item13 {
+    background: #dff2f8;
+    line-height: 26px;
+    text-align: center;
+    float: left; }
+    .season-item2 .season-item13 a {
+      font-family: "OpenSans-Semibold";
+      font-size: 10px;
+      color: #999999; }
+    .season-item2 .season-item13 a:hover {
+      text-decoration: underline; }
+
+.season-item-line:before {
+  position: absolute;
+  background: #ebebeb;
+  content: '';
+  width: 4px;
+  height: 1px;
+  top: 50%;
+  left: 100%;
+  transform: translate(0, -50%); }
+
+.season-item-line2:before {
+  position: absolute;
+  background: #ebebeb;
+  content: '';
+  width: 4px;
+  height: 1px;
+  top: 50%;
+  right: 100%;
+  transform: translate(0, -50%); }
+
+.season-couple-item {
+  position: relative; }
+
+.season-couple-item:before {
+  position: absolute;
+  background: #ebebeb;
+  content: '';
+  width: 1px;
+  height: calc(100% - 26px);
+  top: 13px;
+  left: calc(100% + 4px); }
+
+.season-couple-item:after {
+  position: absolute;
+  background: #ebebeb;
+  content: '';
+  width: 5px;
+  height: 1px;
+  top: 50%;
+  left: calc(100% + 5px); }
+
+.season-couple-item2 {
+  position: relative; }
+
+.season-couple-item2:before {
+  position: absolute;
+  background: #ebebeb;
+  content: '';
+  width: 1px;
+  height: calc(100% - 26px);
+  top: 13px;
+  right: calc(100% + 4px); }
+
+.season-couple-item2:after {
+  position: absolute;
+  background: #ebebeb;
+  content: '';
+  width: 5px;
+  height: 1px;
+  top: 50%;
+  right: calc(100% + 5px); }
+
+.season-title {
+  height: 24px;
+  line-height: 24px;
+  font-family: "OpenSans-Semibold";
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 9px;
+  color: #0099cc;
+  letter-spacing: 0.02em;
+  display: block; }
+
+.season-title_style {
+  text-align: right;
+  position: relative; }
+  .season-title_style strong {
+    position: absolute;
+    top: 0px;
+    right: 0px; }
+
+.season-line {
+  position: relative; }
+
+.season-line:before {
+  position: absolute;
+  background: #ebebeb;
+  content: '';
+  width: 1px;
+  height: calc(100% - ((100% - 285px)/2));
+  top: calc((100% - 285px)/4);
+  right: calc(100% + 9px); }
+
+.season-line2 {
+  position: relative; }
+
+.season-line2:before {
+  position: absolute;
+  background: #ebebeb;
+  content: '';
+  width: 1px;
+  height: calc(100% - ((100% - 285px)/2));
+  top: calc((100% - 285px)/4);
+  left: calc(100% + 9px); }
+
+/*season-item*/
+/*season-middle*/
+.az-season-logo {
+  width: calc(100% - 50px);
+  margin-left: 25px;
+  margin-top: 100px;
+  position: relative;
+  border: 1px solid #cbd1d6; }
+  .az-season-logo img:first-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .az-season-logo img:last-child {
+    opacity: 0;
+    margin: 30px 0; }
+
+.az-superfinal {
+  font-size: 22px;
+  font-family: "OpenSans-Semibold";
+  text-transform: uppercase;
+  color: #e09b1b;
+  letter-spacing: 0.02em;
+  line-height: 87px;
+  height: 87px;
+  display: block;
+  text-align: center; }
+
+.az-final {
+  margin-left: 30px;
+  border: 1px solid #cbd1d6;
+  padding: 3px 4px;
+  width: calc(100% - 60px);
+  font-size: 0px;
+  position: relative; }
+
+.az-final2 {
+  margin-top: 47px;
+  margin-left: 43px;
+  border: 1px solid #cbd1d6;
+  padding: 2px;
+  width: calc(100% - 86px);
+  font-size: 0px; }
+
+.az-finalright {
+  width: 120px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: calc(100% + 2px);
+  border: 1px solid #cbd1d6;
+  padding: 2px;
+  background: #fff;
+  z-index: 3; }
+
+.az-finalleft {
+  width: 120px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: calc(100% + 2px);
+  border: 1px solid #cbd1d6;
+  padding: 2px;
+  background: #fff;
+  z-index: 3; }
+
+.season-item3 {
+  width: 100%;
+  height: 35px;
+  position: relative; }
+  .season-item3 .season-item11, .season-item3 .season-item13 {
+    width: 35px;
+    height: 35px; }
+  .season-item3 .season-item11 {
+    font-family: "OpenSans-Regular";
+    font-size: 10px;
+    color: #97a3ad;
+    line-height: 35px;
+    text-align: center;
+    float: left; }
+  .season-item3 .season-item12 {
+    width: calc(100% - 70px);
+    height: 35px;
+    float: left;
+    padding-left: 7px;
+    padding-top: 7px; }
+    .season-item3 .season-item12 .az-span1 {
+      color: #050708;
+      font-family: "OpenSans-Semibold";
+      font-size: 11px;
+      display: block;
+      letter-spacing: 0.02em; }
+    .season-item3 .season-item12 .az-span1:hover {
+      text-decoration: underline; }
+    .season-item3 .season-item12 .az-span2 {
+      color: #666666;
+      font-family: "OpenSans-Semibold";
+      font-size: 8px;
+      display: block;
+      letter-spacing: 0.02em;
+      line-height: 10px; }
+  .season-item3 .season-item13 {
+    line-height: 35px;
+    text-align: center;
+    float: left; }
+    .season-item3 .season-item13 a {
+      font-family: "OpenSans-Semibold";
+      font-size: 10px;
+      color: #999999; }
+    .season-item3 .season-item13 a:hover {
+      text-decoration: underline; }
+
+.season-item4 {
+  width: 100%;
+  height: 30px;
+  position: relative; }
+  .season-item4 .season-item11, .season-item4 .season-item13 {
+    width: 30px;
+    height: 30px; }
+  .season-item4 .season-item11 {
+    font-family: "OpenSans-Regular";
+    font-size: 10px;
+    color: #97a3ad;
+    line-height: 30px;
+    text-align: center;
+    float: left; }
+  .season-item4 .season-item12 {
+    width: calc(100% - 60px);
+    height: 30px;
+    float: left;
+    padding-left: 7px;
+    padding-top: 7px; }
+    .season-item4 .season-item12 .az-span1 {
+      color: #050708;
+      font-family: "OpenSans-Semibold";
+      font-size: 9px;
+      display: block;
+      letter-spacing: 0.02em; }
+    .season-item4 .season-item12 .az-span1:hover {
+      text-decoration: underline; }
+    .season-item4 .season-item12 .az-span2 {
+      color: #666666;
+      font-family: "OpenSans-Semibold";
+      font-size: 9px;
+      display: block;
+      letter-spacing: 0.02em;
+      line-height: 10px; }
+  .season-item4 .season-item13 {
+    line-height: 30px;
+    text-align: center;
+    float: left; }
+    .season-item4 .season-item13 a {
+      font-family: "OpenSans-Semibold";
+      font-size: 10px;
+      color: #999999; }
+    .season-item4 .season-item13 a:hover {
+      text-decoration: underline; }
+
+.az-winner {
+  width: calc(100% - 40px);
+  margin-left: 20px;
+  margin-top: 18px;
+  border: 1px solid #cbd1d6;
+  padding: 4px;
+  position: relative; }
+  .az-winner .az-name {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    border-radius: 2px;
+    background: linear-gradient(to top, #f9a219, #fab429); }
+    .az-winner .az-name .az-title {
+      margin-top: 38px;
+      text-align: center;
+      display: inline-block;
+      color: #fff;
+      font-family: "OpenSans-Semibold";
+      font-size: 12px;
+      text-transform: uppercase; }
+    .az-winner .az-name .city {
+      padding-top: 4px;
+      text-align: center;
+      display: block;
+      color: #666666;
+      font-family: "OpenSans-Semibold";
+      font-size: 9px; }
+
+.az-winner:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 1px);
+  transform: translate(-50%, 0);
+  width: 1px;
+  height: 18px;
+  background: #cbd1d6; }
+
+.lpr {
+  font-family: "OpenSans-Regular";
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #e09b1b;
+  text-align: center;
+  display: block;
+  margin: 29px 0 21px 0; }
+
+.az-pdf {
+  width: 178px;
+  height: 37px;
+  display: block;
+  margin: 0 auto;
+  background: url(../img/az-print.png) no-repeat top left; }
+
+/*season-middle*/
+/*third*/
+.third-level {
+  font-family: "OpenSans-Regular";
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #e09b1b;
+  text-align: center;
+  display: block;
+  margin: 29px 0 52px 0;
+  letter-spacing: 0.02em; }
+
+.az-scheme {
+  width: 348px;
+  margin: 0 auto; }
+  .az-scheme .season-item5 {
+    float: left;
+    width: 150px;
+    margin: 0 12px; }
+    .az-scheme .season-item5 .season-item12 {
+      width: calc(100% - 26px); }
+
+.az-winner2 {
+  width: 180px;
+  margin: 50px auto 0 auto;
+  border: none;
+  position: relative; }
+  .az-winner2 .az-name {
+    height: 50px; }
+    .az-winner2 .az-name .az-title {
+      margin-top: 13px; }
+    .az-winner2 .az-name .city {
+      padding-top: 0px;
+      color: #333333; }
+
+.az-winner2:before {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1px;
+  height: 68px;
+  content: '';
+  background: #d8d8d8;
+  bottom: calc(100% - 4px); }
+
+.az-winner2:after {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 24px;
+  height: 1px;
+  content: '';
+  background: #d8d8d8;
+  bottom: calc(100% + 63px); }
+
+/*third*/
+.az-season {
+  padding-top: 18px;
+  margin-bottom: 77px; }
+
+/*margins*/
+.az-margin-top106 {
+  margin-top: 106px; }
+
+.az-margin-top285 {
+  margin-top: 285px; }
+
+.az-margin-top149 {
+  margin-top: 149px; }
+
+.az-margin-top129 {
+  margin-top: 129px; }
+
+.az-margin-top105 {
+  margin-top: 105px; }
+
+.az-margin-top47 {
+  margin-top: 47px; }
+
+.az-margin-top37 {
+  margin-top: 37px; }
+
+.az-margin-top65 {
+  margin-top: 65px; }
+
+.az-margin-top15 {
+  margin-top: 15px; }
+
+.az-margin-bottom39 {
+  margin-bottom: 39px; }
+
+.az-margin-bottom130 {
+  margin-bottom: 130px; }
+
+.az-margin-bottom285 {
+  margin-bottom: 285px; }
+
+.az-margin-bottom14 {
+  margin-bottom: 14px; }
+
+.az-margin-top4 {
+  margin-top: 4px; }
+
+.az-margin-top20 {
+  margin-top: 20px;
+  display: inline-block; }
+
+.az-margin-top20-2 {
+  margin-top: 20px; }
+
+.az-margin-bottom25 {
+  margin-bottom: 25px;
+  display: inline-block; }
+
+.az-margin-bottom20 {
+  margin-bottom: 20px; }
+
+.az-margin-bottom70 {
+  margin-bottom: 70px;
+  display: inline-block; }
+
+.az-margin-bottom10 {
+  margin-bottom: 10px; }
+
+.az-margin-bottom15 {
+  margin-bottom: 15px; }
+
+.az-padding-top50 {
+  padding-top: 50px; }
+
+.az-margin10-18 {
+  margin-top: 10px;
+  margin-bottom: 18px; }
+
+.az-padding-bottom25 {
+  padding-bottom: 25px; }
+
+/*margins*/
+@media only screen and (min-width: 768px) {
+  .az-col3 {
+    width: 45%; }
+
+  .az-sm-margin10 {
+    margin-right: 10%; } }
+@media only screen and (min-width: 992px) {
+  .devision {
+    background: linear-gradient(to left, #f6f9fa 25%, #FFF 25%); }
+
+  .az-md-padding-right30 {
+    padding-right: 30px; }
+
+  .az-select_style {
+    width: 280px; }
+
+  .az-col2 {
+    width: 45%; }
+
+  .az-md-margin10 {
+    margin-right: 10%; } }
+@media only screen and (min-width: 1200px) {
+  .az-col3 {
+    width: 23.5%; }
+
+  .az-lg-margin2 {
+    margin-right: 2%; }
+
+  .az-lg-margin0 {
+    margin-right: 0%; } }
+
+/*# sourceMappingURL=style3.css.map */

@@ -1,0 +1,13 @@
+<div class='demo-1'>1000</div>
+<script src="countid.js"></script>
+<script>
+	$('.demo-1').countid();
+	Date.prototype.addSeconds= function(h){
+	    this.setSeconds(this.getSeconds()+h);
+	    return this;
+	}
+	var date = new Date().addSeconds(5) / 1000
+</script>
+
+</body>
+</html>
