@@ -1,4 +1,4 @@
-﻿//файлы css-файлов
+//файлы css-файлов
 var css_files = new Array(
 	'css/*.css',
 	'libs/bootstrap/bootstrap-grid-3.3.1.min.css',
@@ -25,20 +25,29 @@ var js_scripts_name = 'scripts.min.js';
 	
 //Заугразка библиотек
 var gulp = require('gulp'),
+	sass         = require('gulp-sass'), 
+	autoprefixer = require('gulp-autoprefixer');
 	concat = require('gulp-concat'),
 	cleanCSS = require('gulp-clean-css'),
 	minifyJS = require('gulp-minify'),
 	uglify = require('gulp-uglify'),
-	pump = require('pump'),
 	rename = require("gulp-rename");
 	imagemin     = require('gulp-imagemin'); 
 
+//Компиляция SCSS в CSS
+gulp.task('sass', function(){ 
+	return gulp.src('css/*.scss') 
+		.pipe(sass()) 
+		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
+		.pipe(gulp.dest('css')) 
+});
+
 //Объединение и минификация всех собственных 
-gulp.task('default', ['concatCSS', 'compressJS', 'imagemin', 'imageMenu', 'includeFiles', 'rootFiles'], function() {
-  return gulp.src(css_files)
-    .pipe(concat('css_style_name.css')) 
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('product/css/'));
+gulp.task('default', ['concatCSS','compressJS', 'imagemin', 'imageMenu', 'includeFiles', 'fonts', 'rootFiles', 'htaccessFiles'], function() {
+   return gulp.src('css/*.scss') 
+		.pipe(sass()) 
+		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
+		.pipe(gulp.dest('css')) 
 });
 
 //Объединение и минификация всех стилей подключаемых библиотек и общих стилей
@@ -80,6 +89,14 @@ gulp.task('includeFiles', function() {
 		
 		.pipe(gulp.dest('product/includes')); 
 });
+
+//Перенос всех шрифтов
+gulp.task('fonts', function() {
+	return gulp.src('fonts/*/**.*')
+		
+		.pipe(gulp.dest('product/fonts')); 
+});
+
 //Перенос файлов в корне
 gulp.task('rootFiles', function() {
 	return gulp.src('*.*')
