@@ -1,0 +1,36 @@
+.breadcrumps{
+	display: block;
+	list-style: none;
+}
+.breadcrumps__link{
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	color: #0e8a5d;
+	letter-spacing: 0.2px;
+	a{
+		display: inline-block;		
+		color: #0e8a5d;
+		padding: 0 7px;
+		text-decoration: none;
+	}
+	span{
+		display: inline-block;
+		color: #666666;
+		padding-left: 5px;
+	}
+	i{
+		display: inline-block;
+	}
+}
+.breadcrumps__link_home a{
+	background-image: url("../../img/home.png");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	width: 20px;
+    height: 17px;
+   	padding:0 7px 0 0;
+   	vertical-align: text-top;
+}

@@ -1,0 +1,30 @@
+.input-label{
+	font-size: 14px;
+	color: #333;
+	display: block;
+	padding-bottom: 8px;
+}
+.input_theme_rosa {
+  display: block;
+  max-width: 360px;  
+  width: 100%;
+  background: #fff;
+}
+
+.input__control{
+	font-family: "Segoe UI Regular";	
+	color: #333;
+	font-size: 14px;
+	line-height: 39px;
+	background: transparent;
+	padding: 0 18px;
+	outline: none; 
+	width: 100%;
+	border: 1px solid #e3e3dc;
+}
+.input__control:focus, .input__control:active{
+	border: 1px solid #a8d5c1;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(85,176,135,0.45);
+	-moz-box-shadow: 0px 0px 3px 0px rgba(85,176,135,0.45);
+	box-shadow: 0px 0px 3px 0px rgba(85,176,135,0.45);
+}

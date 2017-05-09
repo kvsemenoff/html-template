@@ -1,0 +1,21 @@
+
+.message_theme_rosa {
+  display: block;
+  line-height: 18px; 
+  width: 100%;
+  resize:none;
+	color: #333;
+	font-size: 14px;	
+	background: #fff;
+	padding: 10px 20px;
+	outline: none; 
+	width: 100%;
+	border: 1px solid #e3e3dc;
+	min-height: 128px;
+}
+.message_theme_rosa:focus, .message_theme_rosa:active{
+	border: 1px solid #a8d5c1;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(85,176,135,0.45);
+	-moz-box-shadow: 0px 0px 3px 0px rgba(85,176,135,0.45);
+	box-shadow: 0px 0px 3px 0px rgba(85,176,135,0.45);
+}

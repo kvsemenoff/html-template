@@ -1,0 +1,17 @@
+.socials-link { display: inline-block; border-radius: 50%; position: relative; width: 28px; height: 28px; background: #005cbe; text-align: center; vertical-align: middle; padding: 3px; box-sizing: border-box; transition: 0.1s all ease; }
+.socials-link:hover { transform: scale(1.05); }
+.socials-link::before { width: 0; height: 0; border-style: solid; border-width: 0 5px 6px 4px; border-color: transparent transparent #005cbe transparent; position: absolute; content: ""; left: 0px; bottom: 0; }
+.socials-link_whats { background: #00b933; }
+.socials-link_whats::before { border-color: transparent transparent #00b933 transparent; transform: rotate(112deg); }
+.socials-link_plane { background: #009ccf; }
+.socials-link_plane::before { border-color: transparent transparent transparent transparent; }
+.socials-link_viber { height: 30px; background: url(../../img/viber-ic.png) center/cover; border-radius: 100%; }
+.socials-link_viber::before { border-color: transparent transparent transparent transparent; }
+.socials-link_vk { background: #2f67a0; }
+.socials-link_vk::before { border-color: transparent transparent #2f67a0 transparent; }
+.socials-link_ok { background: #e97f21; }
+.socials-link_ok::before { border-color: transparent transparent #e97f21 transparent; }
+.socials-link_inst { background: #c22da0; }
+.socials-link_inst::before { border-color: transparent transparent #c22da0 transparent; }
+
+.fa { font-size: 15px; color: #fff; }

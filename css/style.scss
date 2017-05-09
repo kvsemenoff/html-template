@@ -1,34 +1,39 @@
-@import "reset.scss";
-@import "fonts.scss";
-
-
-.clear{
-    clear: both;
+.body{
+	
 }
-.center{
-	text-align: center;
+body, html{
+	height:100%;
 }
 
-@media only screen and (min-width : 320px) {
+.n-wrapper{
+	width: 100%;
+	margin: 0 auto;
 }
 
-@media only screen and (min-width : 480px) {
+.n-header{
+	display:table-row;
+	height: 1px;
+}
+.n-content{
+	display:table-row;
+
+}
+.n-footer{
+	display:table-row;
+	height: 1px;
+
+}
+.n-wrapper{
+	width: 100%;
+	display:table;
+}
+.n-content-inner{
+	display:table-cell;
+}
+.vertical-align{
+	vertical-align:middle;
 }
 
-@media only screen and (min-width : 768px) {
+strong{
+	font-weight: 600;
 }
-
-@media only screen and (min-width : 992px) {
-}
-
-@media only screen and (min-width : 1248px) {
-}
-
-@import "style-db.scss";
-@import "style-dc.scss";
-@import "style-de.scss";
-@import "style-df.scss";
-@import "style-dg.scss";
-@import "style-dh.scss";
-@import "style-di.scss";
-@import "style-dj.scss";

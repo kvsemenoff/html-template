@@ -33,5 +33,3 @@ blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
-
-/*# sourceMappingURL=reset.css.map */

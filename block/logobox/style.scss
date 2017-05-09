@@ -1,0 +1,18 @@
+.logobox{
+	display: inline-block;
+}
+.logobox__img img{
+	max-width: 100%;
+	height: auto;
+}
+.logobox__txt{
+	display: block;
+	text-align: right;
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 15px;//28
+	text-transform: uppercase;
+	padding-right: 10px;
+}

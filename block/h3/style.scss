@@ -1,0 +1,15 @@
+.h3 {
+	color: #333;
+	font-family: 'PT Serif', serif;
+	font-size: 24px;
+	font-weight: 700;
+	font-style: italic;
+	line-height: 18px;
+	letter-spacing: 0.8px;
+	@media only screen and (max-width : 1000px) {
+		font-size: 18px;
+	}
+	@media only screen and (max-width : 700px) {
+		font-size: 16px;
+	}
+}
