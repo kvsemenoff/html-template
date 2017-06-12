@@ -1,38 +1,25 @@
-.body{
-font-family: 'arial', sans-serif;
-color: #421f18;
-font-size: 12px;
-}
+
 
 body, html{
 	height:100%;
 }
 
-.n-wrapper{
-	width: 100%;
-	margin: 0 auto;
+.wrapper {
+ 	display: flex;
+  	flex-direction: column;
+  	height: 100%;
 }
-
-.n-header{
-	display:table-row;
-	height: 1px;
+.content {
+  	flex: 1 0 auto;
 }
-.n-content{
-	display:table-row;
-
-}
-.n-footer{
-	display:table-row;
-	height: 1px;
-
-}
-.n-wrapper{
-	width: 100%;
-	display:table;
-}
-.n-content-inner{
-	display:table-cell;
+.footer {
+  	flex: 0 0 auto;
 }
 .vertical-align{
 	vertical-align:middle;
+}
+.body{
+	font-family: 'Ubuntu', sans-serif;
+	color:#000;
+	font-size: 16px;
 }
