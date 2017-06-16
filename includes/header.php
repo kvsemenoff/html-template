@@ -7,6 +7,7 @@
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/popup.css">
 
 	<link rel="stylesheet" href="css/style-db.css">
 	<link rel="stylesheet" href="css/style-dc.css">
