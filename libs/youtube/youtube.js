@@ -11,22 +11,18 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
  var player;
  function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-      height: '320',
-      width: '100%',
-      videoId: '974CsH5Cumg',
-      playerVars: { 
-	    'controls': 0, 
-	    'showinfo': 0
-	  },
-      events: {
+        height: '320',
+        width: '100%',
+        videoId: '974CsH5Cumg',
+        playerVars: { 
+	       'autoplay': 0,
+           'controls': 0, 
+           'showinfo': 0
+	   },
+        events: {
         'onReady': onPlayerReady
       }
     });
-}
-
-// 3. API вызовит эту функцию когда видео плеер будет загружен
-function onPlayerReady(event) {
-	event.target.playVideo();
 }
 
 //функция, которая останавливает проигрывание      
