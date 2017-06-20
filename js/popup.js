@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('a[data-modal="modal"').on("click", function(e){
+	$('a[data-modal="modal"]').on("click", function(e){
 		e.preventDefault();
 		var  id = $(this).attr('href'),
 		winW = $(window).width(),
